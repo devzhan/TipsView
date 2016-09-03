@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp">
+
+    <FrameLayout
+        android:id="@+id/tooltip_topframe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/tooltip_top_frame" />
+
+    <RelativeLayout
+        android:id="@+id/tooltip__up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ProgressBar
+            android:id="@+id/pro_top"
+            style="@style/VerticalProgressbar_top"
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/img_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-3dp"
+            android:progress="50" />
+
+        <ImageView
+            android:id="@+id/img_top"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/tiptool_circle" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/tooltip_contentholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tooltip_topframe"
+        android:layout_marginTop="-2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tooltip_contenttv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tooltip_subcontenttv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tooltip_knowcontenttv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:text="我知道了"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/tooltip_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/tooltip_contentholder"
+        android:layout_marginTop="-6dp"
+        android:background="@drawable/quickcontact_drop_shadow"
+        android:visibility="invisible" />
+
+    <FrameLayout
+        android:id="@+id/tooltip_bottomframe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tooltip_contentholder"
+        android:background="@drawable/tooltip_bottom_frame" />
+
+    <RelativeLayout
+        android:id="@+id/tooltip__down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tooltip_bottomframe"
+        android:layout_marginTop="-1dp"
+        android:gravity="center_horizontal">
+
+        <ProgressBar
+            android:id="@+id/pro_down"
+            style="@style/VerticalProgressbar_bottom"
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:progress="50" />
+
+        <ImageView
+            android:id="@+id/img_down"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_below="@+id/pro_down"
+            android:layout_marginTop="-3dp"
+            android:src="@drawable/tiptool_circle" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

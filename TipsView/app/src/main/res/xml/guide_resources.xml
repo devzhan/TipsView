@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guideresources>
+
+    <resources
+        id="bt_main"
+        image="guidehand"
+        subtext="掌握实时微博动态"
+        text="进入首页" />
+    <resources
+        id="bt_message"
+        image="guidehand"
+        subtext="体验朋友消息聊天"
+        text="进入消息列表" />
+    <resources
+        id="bt_built"
+        image="guidehand"
+        subtext="快速创建您想要的内容"
+        text="进入新建模块" />
+    <resources
+        id="bt_contact"
+        image="guidehand"
+        subtext="快速搜索信息，要你想要"
+        text="进入搜索" />
+    <resources
+        id="bt_personal"
+        image="guidehand"
+        subtext="查看个人资料和设置信息"
+        text="进入个人中心" />
+</guideresources>
